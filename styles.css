@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d29cae; /* Light pink background */
+    font-family: 'Luckiest Guy', cursive;
+
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .envelope {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #ff69b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: envelopeAnim 1s ease-out infinite alternate;
+  }
+  
+  @keyframes envelopeAnim {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(15deg); }
+  }
+  
+  .heart-button {
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .message-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .message, .proud-message, .energy-message {
+    display: none;
+  }
+  
+  .energy-message {
+    font-size: 100px;
+    color: #f20b77;
+    font-weight: bold;
+    animation: energyAnim 1s linear;
+  }
+  
+  @keyframes energyAnim {
+    0% { transform: scale(1); }
+    100% { transform: scale(2); }
+  }
+  
